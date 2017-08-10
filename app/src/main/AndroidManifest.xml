@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.convidado.mondayevents">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".application.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".application.MyEventsActivity"
+            android:label="@string/my_events_activity" />
+        <activity
+            android:name=".application.SignUpActivity"
+            android:label="@string/sign_up"
+            android:parentActivityName=".application.LoginActivity" />
+        <activity
+            android:name=".application.CreateEventActivity"
+            android:label="@string/create_event_activity"
+            android:parentActivityName=".application.MyEventsActivity" />
+        <activity
+            android:name=".application.AddOwnerActivity"
+            android:label="@string/add_owner_activity"
+            android:parentActivityName=".application.AddSpensorActivity" />
+        <activity
+            android:name=".application.AddSpensorActivity"
+            android:label="@string/add_spensor_activity"
+            android:parentActivityName=".application.CreateEventActivity" />
+        <activity
+            android:name=".application.CreateActivity"
+            android:label="@string/create_activity"
+            android:parentActivityName=".application.MyEventsActivity" />
+
+        <activity android:name=".application.AddHandlerActivity"
+            android:label="@string/create_handler_activity"
+            android:parentActivityName=".application.CreateActivity"/>
+    </application>
+
+</manifest>

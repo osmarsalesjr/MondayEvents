@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Monday Events</string>
+    <string name="my_events_activity">My Events</string>
+    <string name="save_n_continue">Save and continue</string>
+    <string name="save">Save</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Strings related to Sign Up -->
+    <string name="cpf_or_cnpj">CPF or CNPJ</string>
+    <string name="name">Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="create_password">Create a password</string>
+    <string name="confirm_password">Confirm a password</string>
+    <string name="web_site">Web site (Optional)</string>
+    <string name="finish">Finish</string>
+
+
+    <!-- Strings related to Create Event -->
+    <string name="create_event_activity">Create a Event</string>
+    <string name="description">Description</string>
+    <string name="type">Type</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="tags">Tags (Optional, split in spaces)</string>
+    <string name="price">Price</string>
+    <string name="next">Next</string>
+
+    <!-- Strings related to Add a Owner -->
+    <string name="add_owner_activity">Add a Owner</string>
+    <string name="add_owner_optional">Add a Owner (Optional)</string>
+
+    <!-- Strings related to Add a Spensor -->
+    <string name="add_spensor_activity">Add a Spensor</string>
+    <string name="add_spensor_optional">Add a Spensor (Optional)</string>
+
+    <!-- Strings related to Add a Activity -->
+    <string name="create_activity">Create a Activity</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="date">Date</string>
+    <string name="selecione_event">Event name</string>
+    <string name="activity_place">Activity place</string>
+    <string name="add_handle">Add a Handle</string>
+
+    <!-- Strings related to Add a Handler -->
+    <string name="create_handler_activity">Add a Handler</string>
+    <string name="aditional_information">Aditional Information</string>
+    <string name="social_page">Social page name</string>
+
+</resources>
