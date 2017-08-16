@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -26,6 +27,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.convidado.mondayevents.R;
 
@@ -49,7 +51,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "foo@example.com:hello", "bar@example.com:world"
+            "osmar@osmar.com:osmala", "mush@mush.com:mushzinho"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -333,6 +335,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             if (success) {
                 finish();
+                Intent intent = new Intent(LoginActivity.this, MainEventsActivity.class);
+                startActivity(intent);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
@@ -345,12 +349,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
         }
 
-        protected void signUp(){
+        public void signUp(){
 
+            Toast.makeText(LoginActivity.this, "Sign Up!", Toast.LENGTH_SHORT).show();
+            //Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+            //startActivity(intent);
         }
 
-        protected void recoverPassword(){
+        public void recoverPassword(){
 
+            Toast.makeText(LoginActivity.this, "Recover Password", Toast.LENGTH_SHORT).show();
+            //Intent intent = new Intent(LoginActivity.this, RecoverPassword.class);
+            //startActivity(intent);
         }
     }
 }

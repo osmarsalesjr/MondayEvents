@@ -60,5 +60,11 @@
     <string name="create_handler_activity">Add a Handler</string>
     <string name="aditional_information">Aditional Information</string>
     <string name="social_page">Social page name</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 </resources>

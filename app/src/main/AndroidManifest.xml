@@ -24,9 +24,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".application.MyEventsActivity"
-            android:label="@string/my_events_activity" />
-        <activity
             android:name=".application.SignUpActivity"
             android:label="@string/sign_up"
             android:parentActivityName=".application.LoginActivity" />
@@ -46,10 +43,14 @@
             android:name=".application.CreateActivity"
             android:label="@string/create_activity"
             android:parentActivityName=".application.MyEventsActivity" />
-
-        <activity android:name=".application.AddHandlerActivity"
+        <activity
+            android:name=".application.AddHandlerActivity"
             android:label="@string/create_handler_activity"
-            android:parentActivityName=".application.CreateActivity"/>
+            android:parentActivityName=".application.CreateActivity" />
+        <activity
+            android:name=".application.MainEventsActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
